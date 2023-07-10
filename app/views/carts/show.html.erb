@@ -1,5 +1,4 @@
 <section class="cart-show">
-
   <header class="page-header">
     <h1>My Cart</h1>
   </header>
@@ -25,7 +24,7 @@
             TOTAL:
           </th>
           <th>
-            $<%= sprintf('%.2f', cart_subtotal_cents / 100.0) %>
+            $<%= number_to_currency(cart_subtotal_cents / 100.0) %>
           </th>
         </tr>
       </tfoot>
@@ -48,5 +47,4 @@
       <% end %>
     </div>
   </div>
-
 </section>
