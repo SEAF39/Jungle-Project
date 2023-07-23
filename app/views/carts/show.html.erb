@@ -46,4 +46,33 @@
       <% end %>
     </div>
   </div>
+
+  <%= link_to "View Categories", admin_categories_url, class: "btn btn-primary" %>
+</section>
+
+<section class="admin-dashboard">
+  <div class="container">
+    <h1>Admin Dashboard</h1>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Product Count</h4>
+            <p class="card-text"><%= @product_count %> products</p>
+            <%= link_to "View Products", admin_products_url, class: "btn btn-primary" %>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Category Count</h4>
+            <p class="card-text"><%= @category_count %> categories</p>
+            <%= link_to "View Categories", admin_categories_url, class: "btn btn-primary" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
